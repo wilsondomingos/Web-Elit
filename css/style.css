@@ -5,21 +5,56 @@ body {
   font-size: 16px;
   line-height: 1.8;
   color: #999999;
+  opacity: .9;
+  z-index: -9;
+}
+html,body{
+    overflow-x: hidden;
 }
 
 a {
   transition: .3s all ease;
   text-decoration: none;
+
 }
 
 a:hover {
-  text-decoration: none;
-}
-.navbar{
- 
+  padding: 0;
+  margin: 0;
+background: #2F558C;
   
-    height: 9vh;
 }
+.lin:hover{
+    background: #2F558C;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 158px;
+    margin-top: 13px;
+    border-radius:0; 
+    text-align: center;
+    z-index: 1;
+}
+.dropdown-menu a:hover{
+    margin-top: 13px;
+    border-radius:0; 
+    text-align: center;
+    z-index: 2;
+}
+a:active{
+    background: #000;
+}
+
+.navbar{
+    height: 13vh;
+    background: #fff;
+    box-shadow: 1px 7px 18px -17px rgba(0,0,0,0.75);
+    font-size: 18px;
+}
+
+
 .color{
     color: #000;
 }
@@ -37,10 +72,12 @@ a:hover {
     left: 0;
     width: 100%;
     z-index: 5;
+    
 }
 
 
 .site-hero{
+  
     background-image: url(../images/fundo\ 4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,6 +85,7 @@ a:hover {
     min-height: 750px;
     height: 100vh;
     position: relative;
+   
 }
 
 .quick-info{
@@ -160,4 +198,40 @@ a:hover {
 
 
 
+
+@media (max-width: 768px) {
+
+    header{
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .navbar ul >li{
+        text-align: center;
+        border: none;
+    }
+    .show a{
+        text-align: center;
+        background: rgb(235, 239, 245);
+     
+        border: none;
+    }
+    .navbar ul{
+        background: #fff;
+        margin-top: 20px;
+        border: none;
+       
+    }
+    a:hover {
+        padding: 0;
+        margin: 0;
+      background: #2F558C;
+      border: none;
+        
+      }
+  
+   
+   
+}
 
