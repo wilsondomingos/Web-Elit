@@ -218,9 +218,10 @@ a:active{
         border: none;
     }
     .navbar ul{
-        background: #fff;
-        margin-top: 28px;
+        background-color: #2980b9;
+        margin-top: 4vh;
         border: none;
+        
     }
     .navbar a:hover {
         padding: 0;
